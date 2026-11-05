@@ -1,0 +1,6 @@
+{
+  "name": "CivicSnap AI",
+  "description": "Municipal garbage triage, storm drain choke detection, and GVMC sanitation dispatch in MVP Colony, Visakhapatnam.",
+  "requestFramePermissions": ["geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

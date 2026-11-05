@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Public Sans', 'Noto Sans Telugu', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-telugu: 'Noto Sans Telugu', 'Public Sans', sans-serif;
+
+  --color-primary: #059669;
+  --color-primary-dark: #047857;
+  --color-primary-container: #00855d;
+  --color-secondary: #0f172a;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Bilingual handling: when Telugu is selected or in Telugu blocks, augment body line-height */
+.lang-te {
+  font-family: var(--font-telugu);
+  line-height: 1.75;
+}
